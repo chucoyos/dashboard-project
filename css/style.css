@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    --primary-color:
+}
+
+.container{
+    display: grid;
+    grid-template-areas: "sidebar navbar navbar navbar"
+        "sidebar main main main";
+    grid-template-columns: 0.4fr repeat(3, 1fr);
+    grid-template-rows: 100px, 4fr;
+}
+.navbar{
+    grid-area: navbar;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.main{
+    grid-area: main;
+}

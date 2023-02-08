@@ -4,12 +4,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Admin Dashboard</title>
 </head>
 <body>
   <div class="container">
-    <div class="header">Header</div>
+    <div class="navbar">
+        <div class="topNav">
+          <div class="search">
+            <div class="menuitem">
+              <img src="icons/magnif.png" alt="Magnify icon">
+            </div>
+            <input type="text" name="search">
+          </div>
+          <div class="account">
+            <div class="menuIcon">
+              <img src="icons/bell.png" alt="Bell icon">
+            </div>
+            <div class="avatar">
+              <img src="icons/account-circle.png" alt="Avatar icon">
+            </div>
+            <p>Memehack2023</p>
+          </div>
+        </div>
+        <div class="bottomNav">
+          <div class="bottom">
+            <idv class="profile">
+              <div class="avatar">
+                <img src="icons/account-circle.png" alt="">
+              </div>
+              <div class="profile-name">
+                <p class="greeting">Hi there,</p>
+                <p class="name">Memehack2023 <span class="username">(@Memehack2023)</span></p>
+              </div>
+            </idv>
+          </div>
+          <div class="buttons">
+            <button class="btn">New</button>
+            <button class="btn">Upload</button>
+            <button class="btn">Share</button>
+          </div>
+        </div>
+    </div>
     <div class="main">
       <div class="cards">
         <div class="card-title">Card Title</div>
