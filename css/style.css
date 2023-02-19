@@ -31,19 +31,36 @@
 .main{
     grid-area: main;
     background-color: var(--main-background-color);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 .card-container{
     display: grid;
+    
+}
+
+.projects > .card-container{
     grid-template-columns: 1fr 1fr;
     margin: 16px;
     gap: 16PX;
 }
-
-.projects > .card-container > .card{
-    padding: 20px;
-    border-left: 6px solid var(--card-border-color);
+.card{
     border-radius: 4px;
     background-color: var(--card-background-color);
     box-shadow: 4px 4px 4px rgb(196, 202, 204);
+    padding: 20px;
+}
+.projects > .card-container > .card{
+    border-left: 6px solid var(--card-border-color);
+}
+.announcements .card-description{
+  border-bottom: 1px solid gray;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+    margin: 16px;
 }
