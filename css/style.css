@@ -28,3 +28,13 @@
 .main{
     grid-area: main;
 }
+
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 8px 0 8px;
+}
+
+.projects > .card-container > .card{
+    padding: 20px;
+}
