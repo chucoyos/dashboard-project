@@ -50,6 +50,8 @@
     background-color: var(--card-background-color);
     box-shadow: 4px 4px 4px rgb(196, 202, 204);
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 .projects > .card-container > .card{
     border-left: 6px solid var(--card-border-color);
@@ -58,9 +60,13 @@
   border-bottom: 1px solid gray;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 16px;
-    margin: 16px;
+.section-header{
+    font-weight: 800;
+}
+.announcements > .card-container{
+    margin-top: 16px;
+}
+
+.trending{
+    grid-column: 2;
 }
