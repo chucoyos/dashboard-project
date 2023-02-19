@@ -7,7 +7,10 @@
 :root{
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
-    --primary-color:
+    --primary-color: ;
+    --main-background-color:rgb(220, 230, 232) ;
+    --card-border-color: rgb(242, 178, 114);
+    --card-background-color: rgb(247, 245, 245);
 }
 
 .container{
@@ -27,14 +30,20 @@
 
 .main{
     grid-area: main;
+    background-color: var(--main-background-color);
 }
 
 .card-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 8px 0 8px;
+    margin: 16px;
+    gap: 16PX;
 }
 
 .projects > .card-container > .card{
     padding: 20px;
+    border-left: 6px solid var(--card-border-color);
+    border-radius: 4px;
+    background-color: var(--card-background-color);
+    box-shadow: 4px 4px 4px rgb(196, 202, 204);
 }
