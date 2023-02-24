@@ -180,6 +180,11 @@
 }
 .announcements {
     display: grid;
+    grid-template-rows: 32px 1fr;
+    gap: 16px;
+}
+.cards {
+    display: grid;
 }
  
 .card{
