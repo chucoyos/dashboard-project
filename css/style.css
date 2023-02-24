@@ -21,13 +21,100 @@
     display: grid;
     grid-template-areas: "sidebar navbar navbar navbar"
         "sidebar main main main";
-    grid-template-columns: 0.4fr repeat(3, 1fr);
+    grid-template-columns: 250px repeat(3, 1fr);
     grid-template-rows: 100px, 4fr;
+    background-color: var(--main-background-color);
 }
 .navbar{
     grid-area: navbar;
+    position: sticky;
+    top: 0;
+    background-color: var(--card-background-color);
+    border-bottom: 2px solid rgb(219,219,219);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: .4rem 10px;
+}
+.topNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .6rem 1rem;
+    
+}
+.topNav .search{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.search > input[type="text"]{
+    border: none;
+    border-radius: 50px;
+    background-color: var(--main-background-color);
+    padding: 5px 10px;
+    width: 40vw;
+    margin-left: 10px;
+}
+.account{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.account > .menuIcon{
+    margin-right: 10px;
+}
+.account > .avatar{
+    margin-right: 10px;
+}
+.account > p {
+    font-size: 1rem;
+    font-weight: bold;
 }
 
+.bottomNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    line-height: 1.5;
+}
+.bottomNav > .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottomNav > .profile > .avatar > img{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 5px;
+}
+.name, .username{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.buttons > .btn{
+    color: var(--text-secondary);
+    background-color: var(--sideBarColor);
+    border: none;
+    font-size: .9rem;
+    padding: .5rem 1.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.buttons > .btn:last-of-type{
+    margin-right: 0;
+}
 .sidebar{
     grid-area: sidebar;
     background-color: var(--sideBarColor);
