@@ -160,20 +160,26 @@
 
 .main{
     grid-area: main;
+    grid-row: span 2;
     background-color: var(--main-background-color);
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr .5fr;
+    gap: 16px;
+    padding: 32px;
 }
 
-.card-container{
+.projects {
+    grid-row: span 2;
     display: grid;
-    
-}
-
-.projects > .card-container{
     grid-template-columns: 1fr 1fr;
-    margin: 16px;
-    gap: 16PX;
+    grid-template-rows: auto repeat(3, 1fr);
+    gap: 16px;
+}
+ .projects > .header {
+    grid-column: span 2;
+}
+.announcements {
+    display: grid;
 }
 .card{
     border-radius: 4px;
@@ -181,16 +187,12 @@
     box-shadow: 4px 4px 4px rgb(196, 202, 204);
     padding: 20px;
 }
-.projects > .card-container > .card{
+.card h2 {
+    font-size: large;
+}
+.projects > .card{
     border-left: 6px solid var(--card-border-color);
 }
-.announcements .card-description{
-  border-bottom: 1px solid gray;
-}
-
-.wrapper {
+.trending {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 16px;
-    margin: 16px;
 }
