@@ -192,6 +192,13 @@
     background-color: var(--card-background-color);
     box-shadow: 4px 4px 4px rgb(196, 202, 204);
     padding: 20px;
+    display: grid;
+}
+.card > footer {
+    display: grid;
+    grid-template-columns: repeat(3, 32px);
+    justify-content: end;
+    gap: 16px;
 }
 .card h2 {
     font-size: large;
