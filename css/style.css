@@ -163,7 +163,7 @@
     grid-row: span 2;
     background-color: var(--main-background-color);
     display: grid;
-    grid-template-columns: 1fr .5fr;
+    grid-template-columns: 1fr .49fr;
     gap: 16px;
     padding: 32px;
 }
@@ -172,7 +172,7 @@
     grid-row: span 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto repeat(3, 1fr);
+    grid-template-rows: 32px repeat(3, 1fr);
     gap: 16px;
 }
  .projects > .header {
@@ -181,6 +181,7 @@
 .announcements {
     display: grid;
 }
+ 
 .card{
     border-radius: 4px;
     background-color: var(--card-background-color);
