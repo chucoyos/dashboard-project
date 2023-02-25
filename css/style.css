@@ -196,7 +196,7 @@
     border-radius: 4px;
     background-color: var(--card-background-color);
     box-shadow: 4px 4px 4px rgb(196, 202, 204);
-    padding: 20px;
+    padding: 16px;
     display: grid;
 }
 .card > footer {
@@ -206,14 +206,21 @@
     gap: 16px;
 }
 .card h2 {
-    font-size: large;
+    font-size: medium;
 }
 .projects > .card{
     border-left: 6px solid var(--card-border-color);
 }
 .trending .card {
     display: flex;
+    align-items: center;
 }
 .trending .user {
     font-weight: bold;
+}
+.trending img {
+    max-width: 32px;
+}
+.header h1 {
+    font-size: large;
 }
