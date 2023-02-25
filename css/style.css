@@ -8,8 +8,8 @@
     --font-family: 'Roboto Mono', monospace;
     --font-size: 16px;
     --primary-color: ;
-    --main-background-color:rgb(220, 230, 232) ;
-    --card-border-color: #edba03;
+    --main-background-color:#e2e8f0 ;
+    --card-border-color: #fdba74;
     --card-background-color: rgb(247, 245, 245);
     --sideBarColor: #0ea5e9;
     --sideBar-width: 250px;
@@ -210,4 +210,10 @@
 }
 .projects > .card{
     border-left: 6px solid var(--card-border-color);
+}
+.trending .card {
+    display: flex;
+}
+.trending .user {
+    font-weight: bold;
 }
