@@ -8,13 +8,14 @@
     --font-family: 'Roboto Mono', monospace;
     --font-size: 16px;
     --primary-color: ;
-    --main-background-color:rgb(220, 230, 232) ;
-    --card-border-color: rgb(242, 178, 114);
+    --main-background-color:#e2e8f0 ;
+    --card-border-color: #fdba74;
     --card-background-color: rgb(247, 245, 245);
     --sideBarColor: #0ea5e9;
     --sideBar-width: 250px;
     --text-primary: black;
     --text-secondary: white;
+    --light-border: #d2cece;
 }
 
 .container{
@@ -73,6 +74,9 @@
 .account > p {
     font-size: 1rem;
     font-weight: bold;
+}
+#morgan {
+    max-width: 24px;
 }
 
 .bottomNav{
@@ -160,37 +164,75 @@
 
 .main{
     grid-area: main;
+    grid-row: span 2;
     background-color: var(--main-background-color);
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr .5fr;
+    gap: 16px;
+    padding: 32px;
 }
 
-.card-container{
+.projects {
+    grid-row: span 2;
     display: grid;
-    
-}
-
-.projects > .card-container{
     grid-template-columns: 1fr 1fr;
-    margin: 16px;
-    gap: 16PX;
+    grid-template-rows: 32px repeat(3, 1fr);
+    gap: 16px;
 }
+ .projects > .header {
+    grid-column: span 2;
+}
+.announcements, .trending {
+    display: grid;
+    grid-template-rows: 32px 1fr;
+    gap: 16px;
+}
+.announcements footer {
+    border-bottom: 2px solid var(--light-border);
+    margin-top: 16px;
+}
+.cards {
+    display: grid;
+}
+ 
 .card{
     border-radius: 4px;
     background-color: var(--card-background-color);
     box-shadow: 4px 4px 4px rgb(196, 202, 204);
-    padding: 20px;
+    padding: 8px 16px;
+    display: grid;
 }
-.projects > .card-container > .card{
+.card > footer {
+    display: grid;
+    grid-template-columns: repeat(3, 32px);
+    justify-content: end;
+    align-items: center;
+}
+.card h2 {
+    font-size: medium;
+}
+.projects > .card{
     border-left: 6px solid var(--card-border-color);
 }
-.announcements .card-description{
-  border-bottom: 1px solid gray;
+.card-description, .description {
+    font-size: small;
 }
-
-.wrapper {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 16px;
-    margin: 16px;
+.trending .card {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.trending .user {
+    font-weight: bold;
+    font-size: small;
+}
+.trending img {
+    max-width: 32px;
+    margin-right: 16px;
+}
+.trending .project {
+    font-size: small;
+}
+.header h1 {
+    font-size: large;
 }
